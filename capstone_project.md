@@ -34,6 +34,12 @@ within Phoenix Arizona, San Antonio Texas, and Fort Worth Texas. Clustering tech
 will be applied to segment and cluster businesses within each of the surrounding community college areas to better 
 understand their similarities and differences. 
 
+### Sample Foursquare Data
+Some of the types of data from Foursquare that will be analyzed include restaurants as shown in Fig. 1.
+
+![alt text](https://github.com/stevenatkin/Coursera_Capstone/blob/master/venue_data.png?raw=true)
+*Fig. 1: Foursquare restaurants near campus*
+
 ## References 
  
 <a name="uscensus" href="https://www.census.gov/newsroom/press-releases/2019/subcounty-population-estimates.html">
