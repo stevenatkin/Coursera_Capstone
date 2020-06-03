@@ -38,6 +38,7 @@ understand their similarities and differences.
 Some of the types of data from Foursquare that will be analyzed include restaurants as shown in Fig. 1.
 
 ![alt text](https://github.com/stevenatkin/Coursera_Capstone/blob/master/venue_data.png?raw=true)
+
 *Fig. 1: Foursquare restaurants near campus*
 
 ## References 
