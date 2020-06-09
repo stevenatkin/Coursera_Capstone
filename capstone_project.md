@@ -158,7 +158,11 @@ Examing the types of businesses in close proximity to community colleges reveals
 
 More study is still required to better determine which businesses have a high likelyhood of success around community college campuses. Other factors that would need to be explored include: construction and leasing costs, labor rates, and the general socio-economic conditions of the perspective markets.  
 
-## References 
+### Jupyter Notebook
+
+To see the complete data, algorithms, and code used to complete this analysis see the live notebook on [Nbviewer](https://nbviewer.jupyter.org/github/stevenatkin/Coursera_Capstone/blob/master/capstone.ipynb) and [GitHub](https://github.com/stevenatkin/Coursera_Capstone).
+
+### References 
 
 <a name="uscensus" href="https://www.census.gov/newsroom/press-releases/2019/subcounty-population-estimates.html">
 1: US Census &mdash; Fastest-Growing Cities</a>  
