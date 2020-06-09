@@ -28,7 +28,7 @@ Some of the types of data from Foursquare that will be analyzed include restaura
 
 #### Community College Data
 
-To identify the list of community colleges, geographic locations, enrollment data, and demographic information the Integrated Postsecondary Education System (IPEDS) from the National Center for Education and Statistics data set for 2018-2019 was examined and filtered by respective location. To identify the neigborhoods that each school was located in the Mapbox service was used to geolocate the school's physical neigborhood. When such data was unavailable the name of the city was used instead. The list of schools for each city can be found in Fig. 2, Fig. 3, and Fig. 4 with their respective locations and student demographic data. 
+To identify the list of community colleges, geographic locations, enrollment data, and demographic information the Integrated Postsecondary Education System (IPEDS) from the National Center for Education and Statistics data set for 2018-2019 was examined and filtered by respective location. To identify the neighborhoods that each school was located in the Mapbox service was used to geolocate the school's physical neighborhood. When such data was unavailable the name of the city was used instead. The list of schools for each city can be found in Fig. 2, Fig. 3, and Fig. 4 with their respective locations and student demographic data. 
 
 ![san_antonio_schools](https://github.com/stevenatkin/Coursera_Capstone/blob/master/san_schools.png?raw=true)
 
@@ -62,7 +62,7 @@ To determine the surrounding venues for each school the Foursquare service was u
 
 #### Student Enrollment and Demographic Analysis
 
-To get a better sense of the demographic distribution of the students in each city, simple bar charts were constructed that aggreagated all student enrollment data in each respective city as shown in Fig. 8, Fig 9, and Fig 10.
+To get a better sense of the demographic distribution of the students in each city, simple bar charts were constructed that aggregated all student enrollment data in each respective city as shown in Fig. 8, Fig 9, and Fig 10.
 
  ![san_enrollment](https://github.com/stevenatkin/Coursera_Capstone/blob/master/san_enrollment.png?raw=true)
 
@@ -80,7 +80,7 @@ To get a better sense of the demographic distribution of the students in each ci
 
 #### Venue Grouping and Preparation for Clustering
 
-To aid in identfying similarities and differences in the types of venues surrounding community colleges clustering analysis was performed. Unsupervised learning using the K-means algorithm was utilized to cluster the venues. The K-Means algorithm is one of the most frequently used methods of unsupervised learning. 
+To aid in identifying similarities and differences in the types of venues surrounding community colleges clustering analysis was performed. Unsupervised learning using the K-means algorithm was utilized to cluster the venues. The K-Means algorithm is one of the most frequently used methods of unsupervised learning. 
 
 To properly cluster the venues they needed to be one hot encoded as the venues represented categorical data. After the data was one hot encoded it was grouped in preparation for clustering analysis, as shown in Fig. 11, Fig. 12, and Fig. 13.
 
@@ -98,7 +98,7 @@ To properly cluster the venues they needed to be one hot encoded as the venues r
 
 #### Determining Optimal Cluster Sizes
 
-Prior to performing clustering of the venue data the data had to be analyzed using the sillhouette method to determine the optimal cluster sizes. The cluster sizes and their respective scores were plotted to easily identify the optimal number of clusters for each city as shown in Fig. 14, Fig. 15, and Fig. 16.
+Prior to performing clustering of the venue data the data had to be analyzed using the silhouette method to determine the optimal cluster sizes. The cluster sizes and their respective scores were plotted to easily identify the optimal number of clusters for each city as shown in Fig. 14, Fig. 15, and Fig. 16.
 
 ![san_score](https://github.com/stevenatkin/Coursera_Capstone/blob/master/san_score.png?raw=true)
 
@@ -130,9 +130,9 @@ To cluster the venues the cluster sizes obtained from the silhouette method for 
 
 *Fig. 16: Dallas Fort Worth Clusters*
 
-Examing the results of clustering reveals four distinct clusters in San Antonio and Phoenix and eight clusters in Dallas Fort Worth. When examining the clusters for each city more closely some obvious similarities emerge. 
+Examining the results of clustering reveals four distinct clusters in San Antonio and Phoenix and eight clusters in Dallas Fort Worth. When examining the clusters for each city more closely some obvious similarities emerge. 
 
-We find that in the case of community colleges in San Antonio the clusters are largely defined by the venue categories Coffee Shops and Mexican Restaurants. When we look at Phoenix we see a similiar pattern especially for Mexican Resturants, but the other clusters are not as distinct as what was observed in San Antonio and certainly there is no cluster that is uniquely defined by the presense of Coffee Shops. When we examine the community colleges in the Dallas Fort Worth area we find a greater number of clusters some of which are different from what was observed in San Antonio and Phoenix. Specifically, the clusters that are defined by Breweries and Burger Joints, yet we do see clusters that are defined by the presense of Mexican Resturants as was observed in San Antonio.
+We find that in the case of community colleges in San Antonio the clusters are largely defined by the venue categories Coffee Shops and Mexican Restaurants. When we look at Phoenix we see a similar pattern especially for Mexican restaurants, but the other clusters are not as distinct as what was observed in San Antonio and certainly there is no cluster that is uniquely defined by the presence of Coffee Shops. When we examine the community colleges in the Dallas Fort Worth area we find a greater number of clusters some of which are different from what was observed in San Antonio and Phoenix. Specifically, the clusters that are defined by Breweries and Burger Joints, yet we do see clusters that are defined by the presence of Mexican Restaurants as was observed in San Antonio.
 
 #### Geospatial Locations of Colleges
 
@@ -150,13 +150,13 @@ To gain additional insight and to better undertsnad the clusters each community 
 
 *Fig. 16: Dallas Fort Worth Map*
 
-Examing the locations of each of the schools in relation to each other explains some of the diversity of the clusters across these cities. Clearly, as schools become physically closer to each other some amount of natural overlap occurs as well as these locations becoming hubs for more businesses to operate given the much larger density of students. Additionally, some of the specific types of clusters are possibly more closely aligned to the demographic preferences of both the students and the region in general. In this case two of the cities are located in Texas and one in Arizona so the results may be somewhat skewed towards general trends of the US Southwest.  
+Examining the locations of each of the schools in relation to each other explains some of the diversity of the clusters across these cities. Clearly, as schools become physically closer to each other some amount of natural overlap occurs as well as these locations becoming hubs for more businesses to operate given the much larger density of students. Additionally, some of the specific types of clusters are possibly more closely aligned to the demographic preferences of both the students and the region in general. In this case two of the cities are located in Texas and one in Arizona so the results may be somewhat skewed towards general trends of the US Southwest.  
 
 ### Conclusion
 
-Examing the types of businesses in close proximity to community colleges reveals that businesses catering to providing meals such as Mexican Resturants and places where students can study such as Coffee Shops and Cafes are highly popular businesses. In some regions there could be some amount of oversaturation of certain venue types in highly competitive markets and may not represent an opportunity for investment, while other types of venues may offer better opportunities with less competition. 
+Examining the types of businesses in close proximity to community colleges reveals that businesses catering to providing meals such as Mexican Restaurants and places where students can study such as Coffee Shops and Cafes are highly popular businesses. In some regions there could be some amount of oversaturation of certain venue types in highly competitive markets and may not represent an opportunity for investment, while other types of venues may offer better opportunities with less competition. 
 
-More study is still required to better determine which businesses have a high likelyhood of success around community college campuses. Other factors that would need to be explored include: construction and leasing costs, labor rates, and the general socio-economic conditions of the perspective markets.  
+More study is still required to better determine which businesses have a high likelihood of success around community college campuses. Other factors that would need to be explored include: construction and leasing costs, labor rates, and the general socio-economic conditions of the perspective markets.  
 
 ### Jupyter Notebook
 
